@@ -136,3 +136,29 @@ Unsere Projektvision ist es, ein digitales Fuhrparkmanagement-System zu entwicke
 Wir möchten die derzeit verteilten Datenquellen und manuellen Arbeitsabläufe durch eine moderne, benutzerfreundliche Lösung ersetzen, die Transparenz schafft, Verwaltungsaufwände reduziert und Fehler minimiert.
 Die Plattform soll allen Beteiligten, von Fahrern über die Fuhrparkleitung bis hin zur Buchhaltung und Geschäftsführung, den Zugriff auf aktuelle und relevante Informationen ermöglichen. Durch automatisierte Erinnerungen, digitale Meldungen und aussagekräftige Auswertungen werden Prozesse vereinfacht und Entscheidungen erleichtert.
 Langfristig schaffen wir eine zentrale Informationsbasis, die den gesamten Fuhrpark effizienter, transparenter und zukunftssicher verwaltet.
+
+
+# Projektumweltanalyse
+```mermaid
+graph TD
+
+    P[Projekt: Digitales Fuhrparkmanagement]
+
+    PL[Projektleiter<br/>Valentin]
+    PM[Projektmanager<br/>Simon]
+    TEAM[Projektteam<br/>Gruppe]
+    AG[Projektauftraggeber<br/>Lehrer]
+    KONK[Konkurrenten<br/>Andere Gruppen]
+
+    PL -->|+| P
+    PM -->|+| P
+    TEAM -->|+| P
+    AG -->|+ oder -| P
+    KONK -->|-| P
+
+    classDef intern fill:#d4edda,stroke:#155724,color:#000;
+    classDef extern fill:#f8d7da,stroke:#721c24,color:#000;
+
+    class PL,PM,TEAM intern;
+    class AG,KONK extern;
+```
