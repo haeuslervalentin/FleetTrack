@@ -46,6 +46,9 @@ mindmap
       Ausgangslage
         Informationen müssen zusammengesucht werden
 ```
+
+# Ausgangslage
+
 # Verwaltungsaufwand im Fuhrpark
 
 ```text
@@ -141,24 +144,34 @@ Langfristig schaffen wir eine zentrale Informationsbasis, die den gesamten Fuhrp
 # Projektumweltanalyse
 ```mermaid
 graph TD
+    %% Subgraph für interne Rollen
+    subgraph Intern ["Interne Projektbeteiligte"]
+        PL[Projektleiter<br/>Valentin]
+        PM[Projektmanager<br/>Simon]
+        AG[Projektauftraggeber<br/>Lehrer]
+    end
 
+    %% Subgraph für externe Rollen
+    subgraph Extern ["Externe Einflüsse"]
+        KONK[Konkurrenten<br/>Andere Gruppen]
+    end
+
+    %% Das zentrale Projekt
     P[Projekt: Digitales Fuhrparkmanagement]
 
-    PL[Projektleiter<br/>Valentin]
-    PM[Projektmanager<br/>Simon]
-    TEAM[Projektteam<br/>Gruppe]
-    AG[Projektauftraggeber<br/>Lehrer]
-    KONK[Konkurrenten<br/>Andere Gruppen]
-
+    %% Verknüpfungen
     PL -->|+| P
     PM -->|+| P
-    TEAM -->|+| P
-    AG -->|+ oder -| P
+    AG -->|+| P
     KONK -->|-| P
 
+    %% Styling
     classDef intern fill:#d4edda,stroke:#155724,color:#000;
     classDef extern fill:#f8d7da,stroke:#721c24,color:#000;
-
-    class PL,PM,TEAM intern;
-    class AG,KONK extern;
+    
+    class AG,PL,PM intern;
+    class KONK extern;
 ```
+
+
+# DeadLine 12.Jänner
