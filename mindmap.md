@@ -173,5 +173,30 @@ graph TD
     class KONK extern;
 ```
 
+# Funktionsziele
+
+## Funktionsziel 1: Zentrale Fuhrparkverwaltung
+
+Bis zum Ende des Projekts ist eine zentrale Software entwickelt , mit der sämtliche Fahrzeugdaten in einer gemeinsamen Datenbank verwaltet werden. Dadurch sind alle relevanten Informationen innerhalb weniger Sekunden abrufbar.
+
+**SMART-Bewertung:**
+- **Spezifisch:** Zentrale Verwaltung aller Fuhrparkdaten
+- **Messbar:** Alle Daten werden in einer Datenbank gespeichert und abrufbar gemacht
+- **Attraktiv:** Reduzierung des Verwaltungsaufwands
+- **Realistisch:** Mit Datenbank und API umsetzbar
+- **Terminiert:** Bis zum Projektabschluss
+
+---
+
+## Funktionsziel 2: KI-gestützte Fuhrparkassistenz
+
+Bis zum Ende des Projekts ist ein lokaler MCP-Server implementiert werden, der mindestens zwei Funktionen des Fuhrparkmanagements über natürliche Sprache ausführbar macht. Benutzer sollen dadurch Informationen abfragen sowie Aktionen wie das Anlegen von Wartungen oder das Abrufen von Fahrzeugdaten über einen KI-Assistenten durchführen können.
+
+**SMART-Bewertung:**
+- **Spezifisch:** Bereitstellung eines localen Server
+- **Messbar:** Mindestens zwei über den MCP-Server nutzbare Funktionen
+- **Attraktiv:** Schnellere Bedienung und Informationsbeschaffung
+- **Realistisch:** Mit Python, MCP und einem LLM umsetzbar
+- **Terminiert:** Bis zum Projektabschluss
 
 # DeadLine 12.Jänner
