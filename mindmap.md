@@ -140,6 +140,7 @@ Wir möchten die derzeit verteilten Datenquellen und manuellen Arbeitsabläufe d
 Die Plattform soll allen Beteiligten, von Fahrern über die Fuhrparkleitung bis hin zur Buchhaltung und Geschäftsführung, den Zugriff auf aktuelle und relevante Informationen ermöglichen. Durch automatisierte Erinnerungen, digitale Meldungen und aussagekräftige Auswertungen werden Prozesse vereinfacht und Entscheidungen erleichtert.
 Langfristig schaffen wir eine zentrale Informationsbasis, die den gesamten Fuhrpark effizienter, transparenter und zukunftssicher verwaltet.
 
+---
 
 # Projektumweltanalyse
 ```mermaid
@@ -173,14 +174,16 @@ graph TD
     class KONK extern;
 ```
 
+---
+
 # Funktionsziele
 
 ## Funktionsziel 1: Zentrale Fuhrparkverwaltung
 
-Bis zum Ende des Projekts ist eine zentrale Software entwickelt , mit der sämtliche Fahrzeugdaten in einer gemeinsamen Datenbank verwaltet werden. Dadurch sind alle relevanten Informationen innerhalb weniger Sekunden abrufbar.
+Bis zum Ende des Projekts ist eine zentrale Datenbank entwickelt, mit der Fahrzeugdaten (Marke, ...) in einer gemeinsamen Datenüberprüften (Zeitüberprüfung, Marke, PS, Wartung) Datenbank verwaltet werden.
 
 **SMART-Bewertung:**
-- **Spezifisch:** Zentrale Verwaltung aller Fuhrparkdaten
+- **Spezifisch:** Zentrale Verwaltung aller geprüften Fuhrparkdaten
 - **Messbar:** Alle Daten werden in einer Datenbank gespeichert und abrufbar gemacht
 - **Attraktiv:** Reduzierung des Verwaltungsaufwands
 - **Realistisch:** Mit Datenbank und API umsetzbar
@@ -190,7 +193,7 @@ Bis zum Ende des Projekts ist eine zentrale Software entwickelt , mit der sämtl
 
 ## Funktionsziel 2: KI-gestützte Fuhrparkassistenz
 
-Bis zum Ende des Projekts ist ein lokaler MCP-Server implementiert werden, der mindestens zwei Funktionen des Fuhrparkmanagements über natürliche Sprache ausführbar macht. Benutzer sollen dadurch Informationen abfragen sowie Aktionen wie das Anlegen von Wartungen oder das Abrufen von Fahrzeugdaten über einen KI-Assistenten durchführen können.
+Bis zum Ende des Projekts ist ein lokaler MCP-Server implementiert werden, der mindestens zwei Funktionen des Fuhrparkmanagements über natürliche Sprache ausführbar macht.
 
 **SMART-Bewertung:**
 - **Spezifisch:** Bereitstellung eines localen Server
@@ -198,5 +201,16 @@ Bis zum Ende des Projekts ist ein lokaler MCP-Server implementiert werden, der m
 - **Attraktiv:** Schnellere Bedienung und Informationsbeschaffung
 - **Realistisch:** Mit Python, MCP und einem LLM umsetzbar
 - **Terminiert:** Bis zum Projektabschluss
+
+# Umsetzungskonzept
+sprache:python,c#
+Variablenbennenung: snake_case
+datenbank namen immer in einzahl
+kennzeichnung des codes mit Namen -> mit comments
+Entscheidungen wie Libs dokumentieren -> direkt im doc 
+wie dokumentieren wir den code -> DocStrings
+wie wird die gesamt Umsetzung dokumentiert -> docstring und readme
+READNE schreiben
+tests müssen dokumentiert sein -> eigenes md file wo tests kurz beschrieben werden
 
 # DeadLine 12.Jänner
