@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "manufacturer": "BMW",
+    "model": "X3",
+    "license_plate": "W-123AB",
+    "year": 2021,
+    "mileage": 58200,
+    "status": "available"
+  },
+  {
+    "id": 2,
+    "manufacturer": "Mercedes-Benz",
+    "model": "Sprinter",
+    "license_plate": "W-456CD",
+    "year": 2019,
+    "mileage": 124500,
+    "status": "maintenance"
+  },
+  {
+    "id": 3,
+    "manufacturer": "Volkswagen",
+    "model": "Caddy",
+    "license_plate": "W-789EF",
+    "year": 2022,
+    "mileage": 31700,
+    "status": "available"
+  }
+]
