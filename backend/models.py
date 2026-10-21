@@ -1,10 +1,20 @@
-from sqlalchemy import Integer, String
+from sqlalchemy import Integer, String # datatypes
 from sqlalchemy.orm import Mapped, mapped_column
 
 from backend.database import Base
 
 
 class Vehicle(Base):
+    """
+    Datamodel Vehicle with fields:
+    + id : int <<PK>>
+    + manufacturer : STR(100)
+    + model : STR(100)
+    + license_plate : STR(20) unique 
+    + year : int 
+    + mileage : int
+    + status : str(30)
+    """
     __tablename__ = "vehicles"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)

@@ -1,14 +1,19 @@
-import json
+import json # for json file handling
 from pathlib import Path
 
-from backend.database import SessionLocal
-from backend.models import Vehicle
+from backend.database import SessionLocal # earlier created session
+from backend.models import Vehicle # self created datamodel
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 SEED_PATH = BASE_DIR / "data" / "seed.json"
 
 
 def read_json(file_path: Path) -> list[dict]:
+    """
+    Reads a json with the given file_path.
+    Savely tries to load the json file and expects FileNotFoundErrors and json.JSONDecodeError
+    Returns a list of dicts with vehicle datas.
+    """
     try:
         with file_path.open("r", encoding="utf-8") as file:
             data = json.load(file)
@@ -24,12 +29,13 @@ def read_json(file_path: Path) -> list[dict]:
 
 
 def seed_database() -> None:
+    """fills the db with the data from the seed.json."""
     vehicle_data = read_json(SEED_PATH)
 
-    with SessionLocal() as session:
+    with SessionLocal() as session: # opening the session
         existing_vehicle = session.query(Vehicle).first()
 
-        if existing_vehicle is not None:
+        if existing_vehicle is not None: # if sth is already saved do not override i
             print("The database has already vehicles")
             return
 
@@ -46,8 +52,8 @@ def seed_database() -> None:
             for vehicle in vehicle_data
         ]
 
-    session.add_all(vehicles)
-    session.commit()
+    session.add_all(vehicles) # save the vehicles in the db 
+    session.commit() # close it 
 
     print(f"{len(vehicles)} vehicles were imported.")
 

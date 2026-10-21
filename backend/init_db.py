@@ -3,6 +3,8 @@ from backend.models import Vehicle
 
 
 def init_db() -> None:
+    """Initialies the database with the earlier build engine"""
+
     Base.metadata.create_all(bind=engine)
     print("Datenbanktabellen wurden erstellt.")
 

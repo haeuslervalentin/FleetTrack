@@ -202,6 +202,18 @@ Bis zum Ende des Projekts ist ein lokaler MCP-Server implementiert werden, der m
 - **Realistisch:** Mit Python, MCP und einem LLM umsetzbar
 - **Terminiert:** Bis zum Projektabschluss
 
+
+
+
+
+
+
+
+
+
+
+
+
 # Umsetzungskonzept
 sprache:python,c#
 Variablenbennenung: snake_case
