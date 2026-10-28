@@ -1,4 +1,4 @@
-from sqlalchemy import Integer, String # datatypes
+from sqlalchemy import Integer, String  # datatypes
 from sqlalchemy.orm import Mapped, mapped_column
 
 from backend.database import Base
@@ -10,11 +10,12 @@ class Vehicle(Base):
     + id : int <<PK>>
     + manufacturer : STR(100)
     + model : STR(100)
-    + license_plate : STR(20) unique 
-    + year : int 
+    + license_plate : STR(20) unique
+    + year : int
     + mileage : int
     + status : str(30)
     """
+
     __tablename__ = "vehicles"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
@@ -28,3 +29,8 @@ class Vehicle(Base):
     year: Mapped[int] = mapped_column(Integer, nullable=False)
     mileage: Mapped[int] = mapped_column(Integer, nullable=False)
     status: Mapped[str] = mapped_column(String(30), nullable=False)
+
+    def __repr__(self) -> str:
+        return f"""
+        <Vehicle(id={self.id}, manufacturer='{self.manufacturer}', model='{self.model}', license_plate='{self.license_plate}',year={self.year},mileage={self.mileage},status={self.status}.
+        """
