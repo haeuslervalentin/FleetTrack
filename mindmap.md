@@ -202,27 +202,4 @@ Bis zum Ende des Projekts ist ein lokaler MCP-Server implementiert werden, der m
 - **Realistisch:** Mit Python, MCP und einem LLM umsetzbar
 - **Terminiert:** Bis zum Projektabschluss
 
-
-
-
-
-
-
-
-
-
-
-
-
-# Umsetzungskonzept
-sprache:python,c#
-Variablenbennenung: snake_case
-datenbank namen immer in einzahl
-kennzeichnung des codes mit Namen -> mit comments
-Entscheidungen wie Libs dokumentieren -> direkt im doc 
-wie dokumentieren wir den code -> DocStrings
-wie wird die gesamt Umsetzung dokumentiert -> docstring und readme
-READNE schreiben
-tests müssen dokumentiert sein -> eigenes md file wo tests kurz beschrieben werden
-
 # DeadLine 12.Jänner
